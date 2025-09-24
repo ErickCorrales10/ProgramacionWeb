@@ -1,0 +1,36 @@
+/* Comentarios en CSS e instrucciones básicas */
+
+p {
+    font-size: 12pt;
+    font-family: Tahoma, Arial, Comic;
+    font-style: normal;
+    color: blue;
+    text-align: left;
+}
+
+#formato1 {
+    font-size: 12pt;
+    font-family: Tahoma;
+    font-weight: bold;
+    color: blue;
+    text-align: center;
+    letter-spacing: 3px;
+    text-shadow: 3px -2px 4px red;
+}
+
+#formato2 {
+    font-size: 12pt;
+    font-family: Tahoma;
+    font-style: italic;
+    color: green;
+    text-align: right;
+    text-shadow: 10px gray;
+}
+
+#formato3 {
+    font-size: 12pt;
+    font-family: Tahoma;
+    font-style: italic;
+    color: #808000;
+    text-align: justify;
+}
