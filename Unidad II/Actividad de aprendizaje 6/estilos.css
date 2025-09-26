@@ -1,0 +1,39 @@
+body {
+    color: #ffffff;
+    font-family: Verdana;
+    font-size: 20px;
+    background-color: navy;
+    text-align: center;
+}
+
+#img1 {
+    border-radius: 50%;
+    width: 220px;
+    height: 250px;
+}
+
+#img2 {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+}
+
+#img3 {
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+
+#img4 {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+#img5 {
+    filter: drop-shadow(0 0 10px red);
+}
+
+img {
+    width: 200px;
+    height: 200px;
+}
