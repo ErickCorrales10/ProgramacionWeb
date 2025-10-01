@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erick Corrales</title>
+</head>
+<body>
+    <form name="formulario">
+        <font face="Arial" Size="5" Color="#333fff">
+            Introduce un número: <input type="text" id="n1"><br><br>
+            Introduce otro número: <input type="text" class="text" id="n2"><br><br>
+
+            <input type="button" onclick="functionEjecutar()" value="Ejecutar"><br><br>
+
+            Resultado suma: <input type="text" class="txt" id="rsuma"><br><br>
+
+            <input type="button" onclick="functionClear()" value="Nueva Operacion">
+        </font>
+    </form>
+
+    <script language="javascript">
+        function functionEjecutar() {
+            // Declaración de variables
+            var x, y, suma;
+
+            // Asignación de valores a las variables
+            x = document.getElementById("n1").value;
+            y = document.getElementById("n2").value;
+
+            // Proceso
+            suma = parseFloat(x) + parseFloat(y);
+
+            // Salida Datos
+            document.getElementById("rsuma").value = suma;
+        }
+
+        function functionClear() {
+            
+            // Asignamos a cada text solo espacio
+            document.getElementById("n1").value = " ";
+            document.getElementById("n2").value = " ";
+            document.getElementById("rsuma").value = " ";
+        }
+    </script>
+</body>
+</html>
