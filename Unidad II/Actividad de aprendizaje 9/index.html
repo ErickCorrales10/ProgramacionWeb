@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erick Corrales</title>
+</head>
+<body>
+    <form name="formulario">
+        Introduce tu edad: <input type="text" id="edadx" class="success txt"><br><br>
+        <input type="button" onclick="funcionEdad()" value="Ejecutar"><br><br>
+        La edad introducida es de una persona: <input type="text" id="txtredad"><br><br>
+        La edad introducida es de una persona: <label id="lblread">Resultado</label><br><br>
+
+        <input type="button" onclick="funcionClear()" value="Nueva comparación"><br><br>
+    </form>
+
+    <script>
+
+        function funcionEdad() {
+            // Declaración de variables
+            var edad=0, mayor='Persona mayor de edad', menor='Persona menor de edad';
+
+            // Asignación de valores a las variables
+            edad = document.getElementById("edadx").value;
+
+            // Comparacion e impresion de datos
+            if (edad >= 18) {
+                document.getElementById("txtredad").value = mayor;
+                document.getElementById("lblread").innerHTML = mayor;
+            } else {
+                document.getElementById("txtredad").value = menor;
+                document.getElementById("lblread").innerHTML = menor;
+            }
+
+            // Instrucción para mandar mensajes de alerta
+            alert('Proceso Terminado');
+        }
+
+        function funcionClear() {
+            // Asignamos a cada text solo espacio
+            document.getElementById("edadx").value = " ";
+            document.getElementById("txtredad").value = " ";
+            var text = "Resultado";
+            document.getElementById("lblread").innerHTML = text;
+
+            // Instruccion para mandar mensaje de alerta pero con dos botones de opcion
+            confirm('Proceso terminado');
+        }
+    </script>
+</body>
+</html>
