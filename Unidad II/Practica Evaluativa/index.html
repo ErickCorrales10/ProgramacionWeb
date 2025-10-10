@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erick Corrales</title>
+
+    <style>
+        .btn {
+            border-radius: 5px;
+        }
+    </style>
+
+</head>
+<body>
+    <table border="0" align="center">
+        <tr>
+            <td><img src="./logo_tec_1.png" width="300" height="100"></td>
+            <td>
+                <font face="Arial, Tahoma" Size=5 Color=#333fff>
+                    <p align=Center>
+                        INSTITUTO TECNOLÓGICO DE TIJUANA <br>
+                        UNIDAD TOMAS AQUINO <br><br>
+                    </p>
+                </font>
+            </td>
+            <td><img src="./logo_tec.png" width="100" height="100"></td>
+        </tr>
+    </table> <br>
+
+    <table border=3 bordercolor="navy" align="center" width="100%">
+        <tr>
+            <td>
+                <font face="Arial" Size=3 Color=#333fff>
+                    <b>Carrera: </b> Ingeniería en Sistemas Computacionales
+                </font>
+            </td>
+            <td>
+                <font face="Arial" Size=3 Color=#333fff>
+                    <b>Materia: </b> Programación Web
+                </font>
+            </td>
+        </tr>
+        
+        <tr>
+            <td>
+                <font face="Arial" Size=3 Color=#333fff>
+                    <b>Horario: </b> 18 - 19 hrs <b>Periodo: </b> 2025-2
+                </font>
+            </td>
+            <td>
+                <font face="Arial" Size=3 Color=#333fff>
+                    <b>Laboratorio: </b> D
+                </font>
+            </td>
+        </tr>
+        
+        <tr>
+            <td>
+                <font face="Arial" Size=3 Color=#333fff>
+                    <b>Alumno: </b> Erick Corrales
+                </font>
+            </td>
+            <td>
+                <font face="Arial" Size=3 Color=#333fff>
+                    <b>Docente: </b> José Jonathan Peréz Castro
+                </font>
+            </td>
+        </tr>
+    </table>
+    <br><br>
+
+    <form name="formulario">
+        <font face="Arial" Size="5" Color=#333fff>
+            <p align="center">
+                Programa que te permite elaborar el cálculo de una función lineal<br>
+                Presiona el botón de la operación que deseas elaborar de acuerdo a la función<br><br>
+            </p>
+
+
+            <table border="3" align="center" width="100%">
+                <tr align="center">
+                    <td>
+                        <b>Función 1</b>
+                    </td>
+                    <td>
+                        <b>Función 2</b>
+                    </td>
+                    <td>
+                        <b>Función 3</b>
+                    </td>
+                </tr>
+                <tr align="center">
+                    <td>
+                        <img src="./F1.jpg" width="300" height="150">
+                    </td>
+                    <td>
+                        <img src="./F2.jpg" width="300" height="150">
+                    </td>
+                    <td>
+                        <img src="./F3.jpg" width="300" height="150">
+                    </td>
+                </tr>
+                <tr align="center">
+                    <td>
+                        <input type="button" value="Calcular Función 1" class="btn" onclick="calcularFuncion1()">
+                    </td>
+                    <td>
+                        <input type="button" value="Calcular Función 2" class="btn" onclick="calcularFuncion2()">
+                    </td>
+                    <td>
+                        <input type="button" value="Calcular Función 3" class="btn" onclick="calcularFuncion3()">
+                    </td>
+                </tr>
+            </table>
+            <br><br>
+
+            Resultado de: <input type="text" class="txt" id="resultado"> 
+            <input type="button" value="Nueva Operación" onclick="nuevaOperacion()">
+        </font>
+    </form>
+
+
+    <script>
+
+        // Funciones para el área y el perímetro del triángulo
+        function calcularFuncion1() {
+            var x = parseFloat(prompt("Ingresa el valor de x:", 0))
+
+            var resultado = Math.pow(x, 2) + (2 * x)
+
+            document.getElementById("resultado").value = `Función 1 = ${resultado}`
+        }
+
+        function calcularFuncion2() {
+            var x = parseFloat(prompt("Ingresa el valor de x:", 0))
+
+            var resultado = 3 * x
+
+            document.getElementById("resultado").value = `Función 2 = ${resultado}`
+        }
+
+        // Funciones para el área y el perímetro del círculo
+        function calcularFuncion3() {
+            var x = parseFloat(prompt("Ingresa el valor de x:", 0))
+
+            var resultado = 3 * x + Math.pow(x, 2)
+
+            document.getElementById("resultado").value = `Función 3 = ${resultado}`
+        }
+
+        // Función para limpiar el resultado
+        function nuevaOperacion() {
+            document.getElementById('resultado').value = ""
+        }
+
+    </script>
+</body>
+</html>
