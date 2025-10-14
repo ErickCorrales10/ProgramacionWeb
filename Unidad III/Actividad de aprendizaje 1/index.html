@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erick Corrales</title>
+    <link rel="stylesheet" href="./estilos.css">
+</head>
+<body>
+    <font face="Tahoma" size="5" color="Blue">
+        <p align="center">
+            Programa para calcular las cuatro operaciones básicas
+        </p><br>
+        <form name="formulario">
+            Selecciona la Operación: 
+            <select id="operaciones-basicas" class="formato">
+                <option value="default">--Selecciona una opción--</option>
+                <option value="suma2">Suma de dos números</option>
+                <option value="resta2">Resta de dos números</option>
+                <option value="mult2">Multiplicación de dos números</option>
+                <option value="divison2">División de dos números</option>
+            </select>
+
+            <input type="button" class="btn" onclick="ejecutar()" value="Ejecutar operación"><br>
+            <label id="lbl-resultado"></label><br>
+            El resultado de la operación seleccionada es: <input type="text" class="txt" id="text-resultado">
+        </form>
+    </font>
+
+    <script>
+        function ejecutar() {
+            // Guardamos la opcion seleccionada por el usuario en una variable
+            var opciones = document.getElementById('operaciones-basicas').value
+
+            // Iniciamos la estructura Switch
+            switch(opciones) {
+                case 'suma2':
+                    // Variables locales
+                    var result, n1, n2
+
+                    // Usamos prompt para solicitar los datos
+                    n1 = prompt('Escribe el primer número')
+                    n2 = prompt('Escribe el segundo número')
+
+                    // Proceso
+                    result = parseFloat(n1) + parseFloat(n2)
+
+                    // Mostramos el resultado en una etiqueta
+                    document.getElementById('lbl-resultado').innerHTML = 'El resultado de la suma es: ' + result
+                    document.getElementById('text-resultado').value = result
+                    break
+
+                case 'resta2':
+                    // Variables locales
+                    var result, n1, n2
+
+                    // Usamos prompt para solicitar los datos
+                    n1 = prompt('Escribe el primer número')
+                    n2 = prompt('Escribe el segundo número')
+
+                    // Proceso
+                    result = parseFloat(n1) - parseFloat(n2)
+
+                    // Mostramos el resultado en una etiqueta
+                    document.getElementById('lbl-resultado').innerHTML = 'El resultado de la resta es: ' + result
+                    document.getElementById('text-resultado').value = result
+                    break
+
+                case 'mult2':
+                    // Variables locales
+                    var result, n1, n2
+
+                    // Usamos prompt para solicitar los datos
+                    n1 = prompt('Escribe el primer número')
+                    n2 = prompt('Escribe el segundo número')
+
+                    // Proceso
+                    result = parseFloat(n1) * parseFloat(n2)
+
+                    // Mostramos el resultado en una etiqueta
+                    document.getElementById('lbl-resultado').innerHTML = 'El resultado de la multiplicación es: ' + result
+                    document.getElementById('text-resultado').value = result
+                    break
+
+                case 'divison2':
+                    // Variables locales
+                    var result, n1, n2
+
+                    // Usamos prompt para solicitar los datos
+                    n1 = prompt('Escribe el primer número')
+                    n2 = prompt('Escribe el segundo número')
+
+                    // Proceso
+                    result = parseFloat(n1) / parseFloat(n2)
+
+                    // Mostramos el resultado en una etiqueta
+                    document.getElementById('lbl-resultado').innerHTML = 'El resultado de la división es: ' + result
+                    document.getElementById('text-resultado').value = result
+                    break
+
+                default:
+                    alert('Selecciona una opción')
+                    break
+            }
+        }
+    </script>
+</body>
+</html>

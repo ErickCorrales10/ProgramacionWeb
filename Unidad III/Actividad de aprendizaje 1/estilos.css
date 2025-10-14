@@ -1,0 +1,24 @@
+.formato {
+    color: navy;
+    font-style: normal;
+    font-family: 'Lucida Sans', Verdana, sans-serif;
+}
+
+.btn {
+    border: none;
+    background-color: rgb(138, 154, 245);
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.txt {
+    border: 2px;
+    background-color: rgb(138, 154, 245);
+    padding: 5px 10px;
+    font-size: 16px;
+    color: black;
+    font-style: normal;
+    font-family: 'Lucida Sans', Verdana, sans-serif;
+}
