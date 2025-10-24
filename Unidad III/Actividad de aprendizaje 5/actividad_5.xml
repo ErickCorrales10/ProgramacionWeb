@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Factura>
+    <Emisor>
+        <RFC>COQE</RFC>
+        <Nombre>ERICK ROBERTO CORRALES QUINTERO</Nombre>
+        <RegimenFiscal>Personas Físicas con Actividades Empresariales y Profesionales</RegimenFiscal>
+    </Emisor>
+
+    <Receptor>
+        <RFC>TNM140723GFA</RFC>
+        <Nombre>TECNOLÓGICO NACIONAL DE MÉXICO</Nombre>
+        <CodigoPostal>03330</CodigoPostal>
+        <RegimenFiscal>Personas Morales con Fines no Lucrativos</RegimenFiscal>
+        <UsoCFDI>Gastos en general</UsoCFDI>
+    </Receptor>
+
+    <DetallesFactura>
+        <FolioFiscal>794C58E8-DF44-44AD-A3A5-F96FCDDDDF137</FolioFiscal>
+        <NoSerieCSD>00001000000703798333</NoSerieCSD>
+        <EfectoComprobante>Ingreso</EfectoComprobante>
+        <Exportacion>No aplica</Exportacion>
+        <Fecha>2025-10-03T11:10:24</Fecha>
+        <CodigoPostal>22666</CodigoPostal>
+    </DetallesFactura>
+
+    <Concepto>
+        <ClaveProductoServicio>86121701</ClaveProductoServicio>
+        <NoIdentificacion>JJPCR3</NoIdentificacion>
+        <Cantidad>1.00</Cantidad>
+        <ClaveUnidad>E48</ClaveUnidad>
+        <Unidad>Unidad de servicio</Unidad>
+        <ValorUnitario>11800.70</ValorUnitario>
+        <Importe>11800.70</Importe>
+        <Descuento>0</Descuento>
+        <ObjetoImpuesto>Sí objeto de impuesto</ObjetoImpuesto>
+    </Concepto>
+</Factura>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<facturaErick>
+    <FacturaCFDI>
+        <FolioFiscalSAT>FCDB2C95-7293-4349-BA95-C8E2C12F68A3</FolioFiscalSAT>
+        <NoCertificadoCSD>00001000000700770357</NoCertificadoCSD>
+        <FolioInterno>BVIII-0200199</FolioInterno>
+        <NoCertificadoSAT>00001000000504204971</NoCertificadoSAT>
+        <FechaTimbrado>2023</FechaTimbrado>
+    </FacturaCFDI>
+
+    <DatoCliente>
+        <Cliente>1300000618 - ERICK CORRALES QUINTERO</Cliente>
+        <RFC>COQE950505FX0</RFC>
+        <Regimen>601 - Personas Fisicas con Actividades Empresariales y Profesionales</Regimen>
+        <Direccion>Fraccionamiento Villa Fontana</Direccion>
+    </DatoCliente>
+
+    <Producto>
+        <Cantidad>18.90</Cantidad>
+        <Unidad>LTR</Unidad>
+        <ClaveProd>15101514</ClaveProd>
+        <NumID>PL/5239/EXP/ES/2015-6085584</NumID>
+        <Descripcion>Gasolina Regular Min. 87 Octanos</Descripcion>
+        <PrecioUnit>20.39982</PrecioUnit>
+        <Importe>385.58</Importe>
+    </Producto>
+
+    <Pago>
+        <Forma>28-Tarjeta de Debito</Forma>
+        <Metodo>PUE-Pago en una sola exhibicion</Metodo>
+        <Uso>G03: Gastos en general</Uso>
+        <Subtotal>385.58</Subtotal>
+        <IVA>28.49</IVA>
+        <Total>414.07</Total>
+    </Pago>
+</facturaErick>
