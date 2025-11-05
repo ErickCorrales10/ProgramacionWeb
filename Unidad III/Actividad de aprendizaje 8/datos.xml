@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<datos>
+	<datosFiscales>
+		<rfcReceptor>COQE950505FX0</rfcReceptor>
+		<razonSocial>PERSONA FISICA</razonSocial>
+		<regimenFiscal>PERSONAS MORALES CON FINES NO LUCRATIVOS</regimenFiscal>
+		<codigoPostal>22205</codigoPostal>
+	</datosFiscales>
+	<datosFacturacion>
+		<calle>Av. Aranjuez Privada San Rafael</calle>
+		<numExterior>2679</numExterior>
+		<numInterior>22NN</numInterior>
+		<colonia>VILLA FONTANA</colonia>
+		<ciudad>Tijuana</ciudad>
+		<municipio>TIJUANA</municipio>
+		<estado>Teclee una selección abajo ...</estado>
+		<correoElectronico>erickcorriales88@gmail.com</correoElectronico>
+		<contacto>6648527514</contacto>
+	</datosFacturacion>
+</datos>

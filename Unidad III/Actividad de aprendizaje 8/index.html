@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programa para generar XML</title>
+
+    <style>
+        #boton-xml {
+            background-color: #0540ad;
+            padding: 10px 15px;
+            color: whitesmoke;
+            
+        }
+    </style>
+</head>
+<body>
+    <table border="0" align="center">
+        <tr>
+            <td><img src="./logo_tec_1.png" width="300" height="100"></td>
+            <td>
+                <font face="Arial, Tahoma" Size=5 Color=#333fff>
+                    <p align=Center>
+                        INSTITUTO TECNOLÓGICO DE TIJUANA <br>
+                        UNIDAD TOMAS AQUINO <br><br>
+                    </p>
+                </font>
+            </td>
+            <td><img src="./logo_tec.png" width="100" height="100"></td>
+        </tr>
+    </table> <br>
+
+    <table align="center" width="100%">
+        <tr>
+            <td>
+                <font face="Arial" Size=3 Color=#333fff>
+                    <b>Carrera: </b> Ingeniería en Sistemas Computacionales
+                </font>
+            </td>
+            <td>
+                <font face="Arial" Size=3 Color=#333fff>
+                    <b>Materia: </b> Programación Web
+                </font>
+            </td>
+        </tr>
+        
+        <tr>
+            <td>
+                <font face="Arial" Size=3 Color=#333fff>
+                    <b>Horario: </b> 18 - 19 hrs <b>Periodo: </b> 2025-2
+                </font>
+            </td>
+            <td>
+                <font face="Arial" Size=3 Color=#333fff>
+                    <b>Laboratorio: </b> D
+                </font>
+            </td>
+        </tr>
+        
+        <tr>
+            <td>
+                <font face="Arial" Size=3 Color=#333fff>
+                    <b>Alumno: </b> Erick Corrales
+                </font>
+            </td>
+            <td>
+                <font face="Arial" Size=3 Color=#333fff>
+                    <b>Docente: </b> José Jonathan Peréz Castro
+                </font>
+            </td>
+        </tr>
+        
+        <tr>
+            <td>
+                <font face="Arial" Size=3 Color=#333fff>
+                    <b>Actividad: </b> Unidad III - Actividad de aprendizaje 8
+                </font>
+            </td>
+            <td>
+                <font face="Arial" Size=3 Color=#333fff>
+                    <b>Fecha Elaboracion: </b> 04 de noviembre de 2025
+                </font>
+            </td>
+        </tr>
+    </table>
+    <br><br>
+
+    <font face="Arial, Tahoma" Size=4 Color=#333fff>
+        <p align="center">Datos Fiscales</p><br>
+        <form name="formulario">
+            <table width="100%">
+                <tr>
+                    <td>
+                        <label for="lbl-rfc-receptor">RFC Receptor: </label><input type="text" id="txt-rfc-receptor">
+                    </td>
+                    <td>
+                        <label for="lbl-razon-social">Razon Social: </label><input type="text" id="txt-razon-social">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="lbl-regimen-fiscal">Regimen fiscal: </label><input type="text" id="txt-regimen-fiscal">
+                    </td>
+                    <td>
+                        <label for="lbl-codigo-postal">Codigo Postal: </label><input type="text" id="txt-codigo-postal">
+                    </td>
+                </tr>
+            </table>
+
+            <br><br>
+            <p align="center">Datos de facturacion</p>
+            
+            <table width="100%">
+                <tr>
+                    <td>
+                        <label for="lbl-calle">Calle: </label><br>
+                        <input type="text" id="txt-calle">
+                    </td>
+                    <td>
+                        <label for="lbl-num-exterior">Numero exterior:</label><br>
+                        <input type="text" id="txt-num-exterior"><br><br>
+                    </td>
+                    <td>
+                        <label for="lbl-num-interior">Numero interior:</label><br>
+                        <input type="text" id="txt-num-interior"><br><br>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="lbl-colonia">Colonia:</label><br>
+                        <input type="text" id="txt-colonia">
+                    </td>
+                    <td>
+                        <label for="lbl-ciudad">Ciudad:</label><br>
+                        <input type="text" id="txt-ciudad">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="lbl-municipio">Municipio:</label><br>
+                        <input type="text" id="txt-municipio">
+                    </td>
+                    <td>
+                        <label for="lbl-estado">Estado:</label><br>
+                        <input type="text" id="txt-estado">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="lbl-email">Correo electronico:</label><br>
+                        <input type="text" id="txt-email">
+                    </td>
+                    <td>
+                        <label for="lbl-contacto">Contacto:</label><br>
+                        <input type="text" id="txt-contacto">
+                    </td>
+                </tr>
+            </table>
+            <br><br>
+            <div style="text-align: center;">
+                <input type="button" id="boton-xml" value="Generar y Descargar XML">
+            </div>
+        </form>
+    </font>
+
+    <script src="./script.js"></script>
+
+</body>
+</html>
