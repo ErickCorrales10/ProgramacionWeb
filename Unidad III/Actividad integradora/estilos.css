@@ -1,0 +1,30 @@
+.lbl {
+    margin: 10px 0 5px;
+    color: blue;
+}
+
+.cuadro-texto {
+    padding: 5px;
+    width: 250px;
+    font-size: 15px;
+    border: 2px solid black;
+    border-radius: 3px;
+}
+
+.contenedor-botones {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 20px;
+}
+
+.btn {
+    background-color: #66b3ff;
+    color: white;
+    border: black solid 1px;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 3px;
+    width: 48%;
+}

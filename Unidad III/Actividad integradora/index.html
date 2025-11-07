@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erick Corrales</title>
+
+    <link rel="stylesheet" href="./estilos.css">> 
+</head>
+<body>
+    <table border="0" align="center">
+        <tr>
+            <td><img src="./logo_tec_1.png" width="300" height="100"></td>
+            <td>
+                <font face="Arial, Tahoma" Size=5 Color=#333fff>
+                    <p align=Center>
+                        INSTITUTO TECNOLÓGICO DE TIJUANA <br>
+                        UNIDAD TOMAS AQUINO <br><br>
+                    </p>
+                </font>
+            </td>
+            <td><img src="./logo_tec.png" width="100" height="100"></td>
+        </tr>
+    </table> <br>
+
+    <table border=3 bordercolor="navy" align="center" width="100%">
+        <tr>
+            <td>
+                <font face="Arial" Size=3 Color=#333fff>
+                    <b>Carrera: </b> Ingeniería en Sistemas Computacionales
+                </font>
+            </td>
+            <td>
+                <font face="Arial" Size=3 Color=#333fff>
+                    <b>Materia: </b> Programación Web
+                </font>
+            </td>
+        </tr>
+        
+        <tr>
+            <td>
+                <font face="Arial" Size=3 Color=#333fff>
+                    <b>Horario: </b> 18 - 19 hrs <b>Periodo: </b> 2025-2
+                </font>
+            </td>
+            <td>
+                <font face="Arial" Size=3 Color=#333fff>
+                    <b>Laboratorio: </b> D
+                </font>
+            </td>
+        </tr>
+        
+        <tr>
+            <td>
+                <font face="Arial" Size=3 Color=#333fff>
+                    <b>Alumno: </b> Erick Corrales
+                </font>
+            </td>
+            <td>
+                <font face="Arial" Size=3 Color=#333fff>
+                    <b>Docente: </b> José Jonathan Peréz Castro
+                </font>
+            </td>
+        </tr>
+    </table>
+    <br><br>
+    <form name="formulario">
+            <label for="num1" class="lbl">Escribe el primer número para la operación:</label>
+            <input type="text" id="num1" class="cuadro-texto" placeholder="Escribe Primer número">
+            <br><br>
+            <label for="num2" class="lbl">Escribe el segundo número para la operación:</label>
+            <input type="text" id="num2" class="cuadro-texto" placeholder="Escribe Segundo número">
+
+            <div class="contenedor-botones">
+                <button type="button" class="btn" onclick="sumar()">Sumar</button>
+                <button type="button" class="btn" onclick="restar()">Restar</button>
+                <button type="button" class="btn" onclick="multiplicar()">Multiplicar</button>
+                <button type="button" class="btn" onclick="dividir()">Dividir</button>
+            </div>
+            <br><br>
+            <div class="resultado">
+                <label for="res" class="lbl">El resultado de la operación es:</label>
+                <input type="text" id="res" class="cuadro-texto">
+            </div>
+            <br>
+            <button type="button" class="btn" onclick="nuevaOperacion()">Nueva Operación</button>
+    </form>
+
+    <script>
+        function obtenerValores() {
+            const num1 = parseFloat(document.getElementById("num1").value);
+            const num2 = parseFloat(document.getElementById("num2").value);
+
+            return { num1, num2 };
+        }
+
+        function sumar() {
+            const valores = obtenerValores();
+            document.getElementById("res").value = valores.num1 + valores.num2;
+        }
+
+        function restar() {
+            const valores = obtenerValores();
+            document.getElementById("res").value = valores.num1 - valores.num2;
+        }
+
+        function multiplicar() {
+            const valores = obtenerValores();
+            document.getElementById("res").value = valores.num1 * valores.num2;
+        }
+
+        function dividir() {
+            const valores = obtenerValores();
+            if (valores.num2 === 0) {
+                alert("No se puede dividir entre cero.");
+                return;
+            }
+            document.getElementById("res").value = valores.num1 / valores.num2;
+        }
+
+        function nuevaOperacion() {
+            document.getElementById('num1').value = ''
+            document.getElementById('num2').value = ''
+            document.getElementById('res').value = ''
+            document.getElementById('num1').placeholder = 'Escribe Primer número'
+            document.getElementById('num2').placeholder = 'Escribe Segundo número'
+        }
+    </script>
+
+</body>
+</html>
