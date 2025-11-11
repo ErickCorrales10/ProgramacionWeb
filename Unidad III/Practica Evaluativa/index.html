@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erick Corrales</title>
+
+    <style>
+        body {
+            color: #333fff;
+        }
+
+        #encabezado {
+            text-align: center;
+        }
+
+        #tabla {
+            width: 100%;
+        }
+
+        .etiqueta {
+            width: 100%;
+            font-weight: bold;
+        }
+
+        .txt {
+            padding: 5px;
+            margin: 10px;
+        }
+
+        .contenedor-botones {
+            text-align: center;
+        }
+
+        .btn {
+            background-color: #57a1f5;
+            color: white;
+            padding: 10px 20px;
+            margin: 5px;
+            border: none;
+            cursor: pointer;
+        }
+        
+        label {
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+    <table border="0" align="center">
+        <tr>
+            <td><img src="./logo_tec_1.png" width="300" height="100"></td>
+            <td>
+                <font face="Arial, Tahoma" Size=5 Color=#333fff>
+                    <p align=Center>
+                        INSTITUTO TECNOLÓGICO DE TIJUANA <br>
+                        UNIDAD TOMAS AQUINO <br><br>
+                    </p>
+                </font>
+            </td>
+            <td><img src="./logo_tec.png" width="100" height="100"></td>
+        </tr>
+    </table> <br>
+
+    <table border=3 bordercolor="navy" align="center" width="100%">
+        <tr>
+            <td>
+                <font face="Arial" Size=3 Color=#333fff>
+                    <b>Carrera: </b> Ingeniería en Sistemas Computacionales
+                </font>
+            </td>
+            <td>
+                <font face="Arial" Size=3 Color=#333fff>
+                    <b>Materia: </b> Programación Web
+                </font>
+            </td>
+        </tr>
+        
+        <tr>
+            <td>
+                <font face="Arial" Size=3 Color=#333fff>
+                    <b>Horario: </b> 18 - 19 hrs <b>Periodo: </b> 2025-2
+                </font>
+            </td>
+            <td>
+                <font face="Arial" Size=3 Color=#333fff>
+                    <b>Laboratorio: </b> D
+                </font>
+            </td>
+        </tr>
+        
+        <tr>
+            <td>
+                <font face="Arial" Size=3 Color=#333fff>
+                    <b>Alumno: </b> Erick Corrales
+                </font>
+            </td>
+            <td>
+                <font face="Arial" Size=3 Color=#333fff>
+                    <b>Docente: </b> José Jonathan Peréz Castro
+                </font>
+            </td>
+        </tr>
+    </table>
+    <br><br>
+
+    <h2 id="encabezado">PRODUCTOS</h2>
+    <form name="formulario">
+        <table id="tabla">
+            <tr>
+                <td><label class="etiqueta">Cantidad</label></td>
+                <td><label class="etiqueta">Clave</label></td>
+                <td><label class="etiqueta">Descripción</label></td>
+                <td><label class="etiqueta">Precio Unitario</label></td>
+                <td><label class="etiqueta">Importe</label></td>
+            </tr>
+            <tr>
+                <td id="cantidad-primero">1</td>
+                <td>4587</td>
+                <td>Sombras Negro y Blanco</td>
+                <td id="precio-primero">57</td>
+                <td><input type="text" class="txt" id="importe1"></input></td>
+            </tr>
+            <tr>
+                <td id="cantidad-segundo">2</td>
+                <td>568</td>
+                <td>Colonia Private Reserve</td>
+                <td id="precio-segundo">120</td>
+                <td><input type="text" class="txt" id="importe2"></input></td>
+            </tr>
+            <tr>
+                <td id="cantidad-tercero">3</td>
+                <td>245</td>
+                <td>Gel Reparador</td>
+                <td id="precio-tercero">84</td>
+                <td><input type="text" class="txt" id="importe3"></input></td>
+            </tr>
+            <tr>
+                <td id="cantidad-cuarto">4</td>
+                <td>8752</td>
+                <td>Gel Limpiador</td>
+                <td id="precio-cuarto">73</td>
+                <td><input type="text" class="txt" id="importe4"></input></td>
+            </tr>
+            <tr>
+                <td id="cantidad-quinto">5</td>
+                <td>875</td>
+                <td>Polvo Compacto</td>
+                <td id="precio-quinto">58</td>
+                <td><input type="text" class="txt" id="importe5"></input></td>
+            </tr>
+        </table>
+        <br>
+        <div class="contenedor-botones">
+            <button type="button" class="btn" onclick="calcularImportePorProducto()">Calcular Importe por Producto</button>
+            <button type="button" class="btn" onclick="calcularImporteTotal()">Calcular Importe Total</button>
+        </div>
+    </form>
+
+    <br><br>
+    <label>Importe de Productos:</label><input type="text" class="txt" id="dato-1"></input><br>
+    <label>Gastos Operativos:</label><input type="text" class="txt" id="dato-2"></input><br>
+    <label>Descuentos:</label><input type="text" class="txt" id="dato-3"></input><br>
+    <label>Subtotal:</label><input type="text" class="txt" id="dato-4"></input><br>
+    <label>IVA:</label><input type="text" class="txt" id="dato-5"></input><br>
+    <label>ISR:</label><input type="text" class="txt" id="dato-6"></input><br>
+    <label>Importe Total:</label><input type="text" class="txt" id="dato-7"></input><br>
+    <button type="button" class="btn" onclick="nuevaOperacion()">Nueva Operación</button>
+
+    <script>
+        function calcularImporteTotal() {
+            if (
+                document.getElementById('importe1').value === '' ||
+                document.getElementById('importe2').value === '' ||
+                document.getElementById('importe3').value === '' ||
+                document.getElementById('importe4').value === '' ||
+                document.getElementById('importe5').value === ''
+            ) {
+                alert('Por favor, calcule primero los importes por producto.')
+            }
+            else {
+                const primerProducto = parseFloat(document.getElementById('importe1').value)
+                const segundoProducto = parseFloat(document.getElementById('importe2').value)
+                const tercerProducto = parseFloat(document.getElementById('importe3').value)
+                const cuartoProducto = parseFloat(document.getElementById('importe4').value)
+                const quintoProducto = parseFloat(document.getElementById('importe5').value)
+
+                const importeProductos = primerProducto + segundoProducto + tercerProducto + cuartoProducto + quintoProducto
+                const gastosOperativos = importeProductos * 0.10
+                const descuentos = importeProductos * 0.05
+                const subtotal = (importeProductos + gastosOperativos) - descuentos
+                const iva = subtotal * 0.15
+                const isr = subtotal * 0.07
+                const importeTotal = subtotal + iva + isr
+
+                document.getElementById('dato-1').value = importeProductos.toFixed(2)
+                document.getElementById('dato-2').value = gastosOperativos.toFixed(2)
+                document.getElementById('dato-3').value = descuentos.toFixed(2)
+                document.getElementById('dato-4').value = subtotal.toFixed(2)
+                document.getElementById('dato-5').value = iva.toFixed(2)
+                document.getElementById('dato-6').value = isr.toFixed(2)
+                document.getElementById('dato-7').value = importeTotal.toFixed(2)
+            }
+        }
+
+        function calcularImportePorProducto() {
+            document.getElementById('importe1').value = 
+                parseFloat(document.getElementById('cantidad-primero').innerText) * 
+                parseFloat(document.getElementById('precio-primero').innerText)
+
+            document.getElementById('importe2').value = 
+                parseFloat(document.getElementById('cantidad-segundo').innerText) *
+                parseFloat(document.getElementById('precio-segundo').innerText)
+
+            document.getElementById('importe3').value =
+                parseFloat(document.getElementById('cantidad-tercero').innerText) *
+                parseFloat(document.getElementById('precio-tercero').innerText)
+            
+            document.getElementById('importe4').value =
+                parseFloat(document.getElementById('cantidad-cuarto').innerText) *
+                parseFloat(document.getElementById('precio-cuarto').innerText)
+
+            document.getElementById('importe5').value =
+                parseFloat(document.getElementById('cantidad-quinto').innerText) *
+                parseFloat(document.getElementById('precio-quinto').innerText)
+        }
+
+        function nuevaOperacion() {
+            document.getElementById('importe1').value = ''
+            document.getElementById('importe2').value = ''
+            document.getElementById('importe3').value = ''
+            document.getElementById('importe4').value = ''
+            document.getElementById('importe5').value = ''
+            document.getElementById('dato-1').value = ''
+            document.getElementById('dato-2').value = ''
+            document.getElementById('dato-3').value = ''
+            document.getElementById('dato-4').value = ''
+            document.getElementById('dato-5').value = ''
+            document.getElementById('dato-6').value = ''
+            document.getElementById('dato-7').value = ''
+        }
+    </script>
+
+</body>
+</html>
