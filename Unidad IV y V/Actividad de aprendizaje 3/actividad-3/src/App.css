@@ -1,0 +1,36 @@
+html, body {
+    color: blue;
+    background-color: rgba(0, 0, 0, 0.767);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 40px;
+}
+
+.Aplicacion {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-imagen {
+    width: 100%;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen {
+    width: 1800px;
+    height: 800px;
+}
+
+.contenedor-tabla {
+    width: 100%;
+    border: solid 2px white;
+}
+
+.tabla {
+    width: 100%;
+    color: white
+}
