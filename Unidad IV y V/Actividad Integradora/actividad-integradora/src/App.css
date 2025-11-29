@@ -1,0 +1,38 @@
+html, body {
+    color: white;
+    background-color: rgba(79, 61, 240, 0.815);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 40px;
+}
+
+.Aplicacion {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.829);
+}
+
+.contenedor-imagen {
+    width: 100%;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen {
+    width: 250px;
+    height: 250px;
+}
+
+.tabla {
+    width: 1000px;
+    text-align: center;
+    border-spacing: 0px;
+}
+
+tr, td {
+    border: 2px solid red;
+    border-spacing: 0px;
+}
