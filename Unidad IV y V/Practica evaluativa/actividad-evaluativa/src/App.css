@@ -1,0 +1,81 @@
+html, body {
+    color: white;
+    background-color: rgba(79, 61, 240, 0.815);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 40px;
+}
+
+.Aplicacion {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.829);
+    padding: 15px 0px;
+}
+
+.contenedor-imagen {
+    width: 100%;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen {
+    width: 250px;
+    height: 250px;
+}
+
+.tabla {
+    width: 1000px;
+    text-align: center;
+    border-spacing: 0px;
+}
+
+tr, td {
+    border: 2px solid red;
+    border-spacing: 0px;
+}
+
+.contenedor-formulario {
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(230, 186, 186);
+    text-align: center;
+}
+
+.formulario {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.etiqueta {
+    width: 40%;
+}
+
+.txt {
+    border-radius: 5px;
+    width: 50%;
+    height: 25px;
+}
+
+.btn {
+    background-color: rgb(210, 6, 6);
+    color: white;
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    margin: 15px;
+}
+
+.contenedor-boton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
